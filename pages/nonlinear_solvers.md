@@ -10,7 +10,7 @@ This section is still missing a lot of content. If you have used or developed Ju
 This section will be split into two categories; Numerical nonlinear solvers, and symbolic nonlinear solvers.
 
 ## Numerical Nonlinear Solvers
-The most complete one is [NonlinearSolve.jl](https://github.com/SciML/NonlinearSolve.jl/), which is part of the [SciML](https://sciml.ai/) ecosystem. It takes the role of a meta-package, and build on top of other packages that implement the actual algorithms. The benefit is that you can define the problem once, and then solve it with a number of different solvers by changing a keyword argument.
+The most coaamplete one is [NonlinearSolve.jl](https://github.com/SciML/NonlinearSolve.jl/), which is part of the [SciML](https://sciml.ai/) ecosystem. It takes the role of a meta-package, and build on top of other packages that implement the actual algorithms. The benefit is that you can define the problem once, and then solve it with a number of different solvers by changing a keyword argument.
 
 The [JuMP.dev](https://jump.dev/) framework provides a simple grammar for defining optimization cost functions, or models. It allows non-linear models to be defined, which can then be optimized using any of the compatible solvers, such as [Ipopt.jl](https://github.com/jump-dev/Ipopt.jl)
 
