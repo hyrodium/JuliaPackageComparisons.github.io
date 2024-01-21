@@ -50,3 +50,9 @@ jobs:
         folder: __site
         target-folder: PR${{github.event.number}}
         repository-name: hyrodium/JuliaPackageComparisonsPreview
+    - name: Post comment with preview link
+      uses: peter-evans/create-or-update-comment@v1
+      with:
+        body: |
+          Preview site is available [here](https://hyrodium.github.io/JuliaPackageComparisonsPreview/PR${{github.event.number}}).
+        token: ${{ secrets.GITHUB_TOKEN }}
