@@ -48,4 +48,5 @@ jobs:
         ssh-key: ${{ secrets.PREVIEW }}
         branch: gh-pages
         folder: __site
+        target-folder: PR${{github.event.number}}
         repository-name: hyrodium/JuliaPackageComparisonsPreview
