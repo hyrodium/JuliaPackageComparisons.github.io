@@ -53,7 +53,7 @@ jobs:
     - name: Post comment with preview link
       uses: peter-evans/create-or-update-comment@v1
       with:
-        issue_number: ${{github.event.number}}
+        issue-number: ${{github.event.number}}
         body: |
           Preview site is available [here](https://hyrodium.github.io/JuliaPackageComparisonsPreview/PR${{github.event.number}}).
         token: ${{ secrets.GITHUB_TOKEN }}
