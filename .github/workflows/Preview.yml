@@ -44,7 +44,8 @@ jobs:
     - name: Build and Deploy
       uses: JamesIves/github-pages-deploy-action@releases/v4
       with:
-        token: ${{ secrets.PREVIEW }}
+        token: ${{ secrets.GITHUB_TOKEN }}
+        ssh: ${{ secrets.PREVIEW }}
         branch: gh-pages
         folder: __site
         repository-name: hyrodium/JuliaPackageComparisonsPreview
